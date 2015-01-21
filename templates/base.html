@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="sample of Django and Bootstrap with tutorial series">
+    <meta name="author" content="LordK1">
+    <!-- ****** faviconit.com favicons ****** -->
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="{% static 'img/favicon.ico' %}">
+    <link rel="icon" type="image/png" sizes="196x196" href="{% static 'img/favicon-192.png' %}">
+    <link rel="icon" type="image/png" sizes="160x160" href="{% static 'img/favicon-160.png' %}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{% static 'img/favicon-96.png' %}">
+    <link rel="icon" type="image/png" sizes="64x64" href="{% static 'img//favicon-64.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon-16.png' %}">
+    <link rel="apple-touch-icon" href="{% static 'img/favicon-57.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/favicon-114.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'img/favicon-114.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'img/favicon-144.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'img/favicon-60.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'img/favicon-120.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/favicon-76.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'img/favicon-152.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/favicon-180.png' %}">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="{% static '/favicon-144.png' %}">
+    <meta name="msapplication-config" content="{% static 'xml/browserconfig.xml' %}">
+    <!-- ****** faviconit.com favicons ****** -->
+    <title>Judemy</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/jumbotron.css' %}" rel="stylesheet">
+    <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="{% static 'js/ie-emulation-modes-warning.js' %}"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+{% include 'navbar.html' %}
+
+{% comment %}<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container">
+        <h1>Hello, world!</h1>
+
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a
+            jumbotron and three supporting pieces of content. Use it as a starting point to create something more
+            unique.</p>
+
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    </div>
+</div>{% endcomment %}
+
+<!-- Example row of columns -->
+{% block content %}
+{% endblock %}
+<div class="container">
+    <hr>
+
+    <footer>
+        <p>&copy; Company 2014</p>
+    </footer>
+</div>
+<!-- /container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="{% static 'js/ie10-viewport-bug-workaround.js' %}"></script>
+
+{% block jquery %}
+
+{% endblock %}
+</body>
+</html>

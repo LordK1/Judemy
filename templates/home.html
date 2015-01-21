@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron" id="main-page">
+        <div class="container">
+            <h1>Wellcome to Judemy !</h1>
+
+            <p>This is a template for a simple marketing or informational website. It includes a large callout called a
+                jumbotron and three supporting pieces of content. Use it as a starting point to create something more
+                unique.</p>
+
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        </div>
+    </div>
+    <div class="container home-registration-form">
+        <h1>Hello , World !</h1>
+
+        <form method="post" action="/">
+            {% csrf_token %}
+            <div class="form-group-lg">
+                {{ form.as_p }}
+            </div>
+            <input type="submit" class="btn btn-lg btn-success"/>
+        </form>
+        {% if message %}
+            <p>{{ message }}</p>
+        {% endif %}
+    </div>
+{% endblock %}
+{% block scripts %}
+    function showMessage () {
+    var messageStr = "{{ message }}"
+    alert(messageStr);
+    }
+
+{% endblock %}

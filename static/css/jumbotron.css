@@ -1,0 +1,80 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+body {
+    /*padding-top: 50px;
+    padding-bottom: 20px;*/
+}
+
+div.jumbotron#main-page {
+    background: #505D6E url("../img/body4.jpg") no-repeat center center fixed;
+    min-height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.jumbotron h1, .jumbotron .h1 {
+    color: #0f0f0f;
+}
+
+.jumbotron p {
+    color: #222222;
+}
+
+.home-registration-form {
+    text-align: center;
+}
+
+div.jumbotron#share-page {
+    background: #505D6E url("../img/body1.jpg") no-repeat center center fixed;
+    min-height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+nav.navbar {
+    margin-bottom: 0px !important;
+}
+
+.navbar-default .navbar-brand {
+    color: snow;
+}
+
+.navbar-brand {
+    float: left;
+    padding: 9.5px 15px;
+    font-size: 25px;
+    line-height: 50px;
+    height: 65px;
+}
+
+.div-panel {
+    border-radius: 12px;
+}
+
+.share-row {
+    color: #d9534f;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.share-row i {
+    margin: 0px 2% 0px 2%;
+
+}
+
+.progress-bar-text {
+    color: #0f0f0f;
+}
+
+.div-rounded {
+    margin: 5px;
+    border-radius: 12px;
+}
+.col-sm-3 ul{
+    text-align: left;
+}
