@@ -16,21 +16,32 @@
             <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
         </div>
     </div>
-    <div class="container home-registration-form">
-        <h1>Hello , World !</h1>
 
-        <form method="post" action="/">
-            {% csrf_token %}
-            <div class="form-group-lg">
-                {#                {{ form.as_p }}#}
-                {{ form.errors }}
-                <input type="email" name="">
-            </div>
-            <input type="submit" class="btn btn-lg btn-success"/>
-        </form>
-        {% if message %}
-            <p>{{ message }}</p>
-        {% endif %}
+    <div class="container home-registration-form">
+        <div class="col-sm-6 col-sm-offset-3">
+            <h1>Hello , World !</h1>
+
+            <form class="form-horizontal" method="post" action="/"> {% csrf_token %}
+                <div class="form-group form-group-lg">
+                    {% if form.email.errors %}
+                        {% for error in form.email.errors %}
+                            <div class="alert alert-danger">
+                                {% comment %}{{ error }}{% endcomment %} Your Email is required !
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                    <div class="input-group">
+                        <input class="form-control" type="email" name="email" placeholder="Your Email Address ..."/>
+                    <span class="input-group-btn">
+                    <input type="submit" class="btn btn-primary btn-lg ">
+                    </span>
+                    </div>
+                </div>
+            </form>
+            {% if message %}
+                <p>{{ message }}</p>
+            {% endif %}
+        </div>
     </div>
 {% endblock %}
 {% block scripts %}
