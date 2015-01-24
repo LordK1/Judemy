@@ -22,7 +22,9 @@
         <form method="post" action="/">
             {% csrf_token %}
             <div class="form-group-lg">
-                {{ form.as_p }}
+                {#                {{ form.as_p }}#}
+                {{ form.errors }}
+                <input type="email" name="">
             </div>
             <input type="submit" class="btn btn-lg btn-success"/>
         </form>
