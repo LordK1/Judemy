@@ -2,6 +2,7 @@
 
 {% block title %} Home {% endblock %}
 
+
 {% block content %}
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -9,17 +10,22 @@
         <div class="container">
             <h1>Wellcome to Judemy !</h1>
 
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called a
+            <p><i class="fa fa-quote-left fa-1x pull-left"></i>
+                This is a template for a simple marketing or informational website. It includes a large callout called a
                 jumbotron and three supporting pieces of content. Use it as a starting point to create something more
-                unique.</p>
+                unique.<i class="fa fa-quote-right fa-1x pull-right"></i>
+            </p>
 
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+            <p><a class="btn btn-default btn-lg btn-block" href="#signup" role="button"> Be First <i
+                    class="fa fa-arrow-circle-o-right "></i></a></p>
         </div>
     </div>
 
-    <div class="container home-registration-form">
+    <div class="container home-registration-form" id="signup">
         <div class="col-sm-6 col-sm-offset-3">
-            <h1>Hello , World !</h1>
+            <i class="fa fa-bank fa-5x"></i>
+
+            <h1>Unlock First!</h1>
 
             <form class="form-horizontal" method="post" action="/"> {% csrf_token %}
                 <div class="form-group form-group-lg">
@@ -38,9 +44,113 @@
                     </div>
                 </div>
             </form>
+            <p class="lead">Sign up here. <br/> Get First News on Content .</p>
             {% if message %}
                 <p>{{ message }}</p>
             {% endif %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 feature-row">
+            <div class="col-lg-6">
+                <i class="fa fa-upload fa-3x"></i>
+
+                <h2>Feature</h2>
+
+                <p class="lead">
+                    some feature text goes here ~!~!
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <i class="fa fa-upload fa-3x"></i>
+
+                <h2>Feature</h2>
+
+                <p class="lead">
+                    some feature text goes here ~!~!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-sm-12 feature-row">
+            <div class="col-lg-3">
+                <i class="fa fa-upload fa-3x"></i>
+
+                <h2>Feature</h2>
+
+                <p class="lead">
+                    some feature text goes here ~!~!
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <i class="fa fa-upload fa-3x"></i>
+
+                <h2>Feature</h2>
+
+                <p class="lead">
+                    some feature text goes here ~!~!
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <i class="fa fa-upload fa-3x"></i>
+
+                <h2>Feature</h2>
+
+                <p class="lead">
+                    some feature text goes here ~!~!
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <i class="fa fa-upload fa-3x"></i>
+
+                <h2>Feature</h2>
+
+                <p class="lead">
+                    some feature text goes here ~!~!
+                </p>
+            </div>
+        </div>
+        <hr/>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 feature-row">
+            <div class="col-lg-3">
+                <i class="fa fa-upload fa-3x"></i>
+
+                <h2>Feature</h2>
+
+                <p class="lead">
+                    some feature text goes here ~!~!
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <i class="fa fa-upload fa-3x"></i>
+
+                <h2>Feature</h2>
+
+                <p class="lead">
+                    some feature text goes here ~!~!
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <i class="fa fa-upload fa-3x"></i>
+
+                <h2>Feature</h2>
+
+                <p class="lead">
+                    some feature text goes here ~!~!
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <i class="fa fa-upload fa-3x"></i>
+
+                <h2>Feature</h2>
+
+                <p class="lead">
+                    some feature text goes here ~!~!
+                </p>
+            </div>
         </div>
     </div>
 {% endblock %}
