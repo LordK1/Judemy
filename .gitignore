@@ -1,8 +1,6 @@
-.idea
-*.pyc
-*.sqlite3
-Procfile
 db.sqlite3
+.DS_STORE
+.idea
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
