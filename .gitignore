@@ -56,3 +56,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# just wen i use heroku should ignore local settings file
+judemy/settings/local.py
